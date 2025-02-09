@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal23 extends StatelessWidget {
-  const soal23({
+class soal24 extends StatelessWidget {
+  const soal24({
     super.key,
   });
 
@@ -19,49 +19,80 @@ class soal23 extends StatelessWidget {
           }, icon: Icon(Icons.more_vert))
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        body:Column(
           children: [
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                ClipOval(
-                  child: Container(
-                    width: 270,
-                    height: 270,
-                    color: Colors.blue,
-                  ),
-                ),
-                Container(
-                  width: 250,
-                  height: 250,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(250 / 2),
-                    border: Border.all(
-                      color: Colors.white,
-                      width: 5
-                    ),
-                    color: Colors.grey[500],
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage('https://picsum.photos/200/300'),
-                    )
-                  ),
-                ),
-              ],
+            Container(
+              padding: EdgeInsets.only(top: 20,left: 20),
+              height: 150,
+              child: ListView.builder(
+                scrollDirection:Axis.horizontal,
+                itemCount: 20,
+                itemBuilder: (context,index){
+                  if(index %2==0){
+                    return Container(
+                      width: 90,
+                      height: 150,
+                      color: Colors.blue,
+                      margin: EdgeInsets.all(20),
+                    );
+                  }else{
+                    return Container(
+                      width: 90,
+                      height: 150,
+                      color: Colors.yellow,
+                      margin: EdgeInsets.all(20),
+                    );
+                  }
+              }),
             ),
-            SizedBox(height: 50,),
-            Text('View',
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                decoration: TextDecoration.underline
-              ),)
+            Expanded(
+              child: ListView.builder(
+                padding: EdgeInsets.all(20),
+                itemCount: 50,
+                itemBuilder: (context,index){
+                  if(index %2 ==0){
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 150,
+                            color: Colors.blue,
+                          ),
+                          SizedBox(height: 10),
+
+                          Text('Hello ${index +1}',
+                              style: TextStyle(fontSize: 25,
+                              )
+                          )
+                        ],
+                      ),
+                    );
+                  }else{
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 150,
+                            color: Colors.amber,
+                          ),
+                          SizedBox(height: 10),
+                          Text('Hello ${index +1}',
+                              style: TextStyle(fontSize: 25,
+                              )
+                          )
+                        ],
+                      ),
+                    );
+                  }
+                },
+              ),
+            ),
           ],
         ),
-      ),
     );
   }
 }

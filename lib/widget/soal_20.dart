@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal19 extends StatelessWidget {
-  const soal19({
+class soal20 extends StatelessWidget {
+  const soal20({
     super.key,
   });
 
@@ -19,32 +19,34 @@ class soal19 extends StatelessWidget {
           }, icon: Icon(Icons.more_vert))
         ],
       ),
-      body:ListView.builder(
-          padding: EdgeInsets.all(20),
-          itemCount: 50,
-          itemBuilder:(context,index)=> Padding(
-          padding: const EdgeInsets.only(bottom: 25),
-            child: Container(
-              padding: EdgeInsets.all(20),
-              alignment: Alignment.bottomLeft,
-              height: 200,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-              color: Colors.grey[300],
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: NetworkImage("https://picsum.photos/${788 + index}/300")
-                )
-              ),
-              child: Text('Hello ${index +1}',
-                  style:
-                    TextStyle(fontSize: 25,
-                    color: Colors.white,
-                  )
-              ),
-            )
-        )
-
+      body: Stack(
+        children: [
+          Container(
+            width: 250,
+            height: 250,
+            color: Colors.green,
+          ),
+          Container(
+            width: 225,
+            height: 225,
+            color: Colors.red,
+          ),
+          Container(
+            width: 200,
+            height: 200,
+            color: Colors.blue,
+          ),
+          Container(
+            width: 175,
+            height: 175,
+            color: Colors.purple,
+          ),
+          Container(
+            width: 150,
+            height: 150,
+            color: Colors.amber,
+          ),
+        ],
       ),
     );
   }

@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal7 extends StatelessWidget {
-  const soal7({
+class soal10 extends StatelessWidget {
+  const soal10({
     super.key,
   });
 
@@ -19,7 +19,8 @@ class soal7 extends StatelessWidget {
           }, icon: Icon(Icons.more_vert))
         ],
       ),
-      body:Row(
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             width: 150,
@@ -35,7 +36,7 @@ class soal7 extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(width: 20,),
+          SizedBox(height: 20,),
           Container(
             width: 150,
             height: 150,

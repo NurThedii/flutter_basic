@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal5 extends StatelessWidget {
-  const soal5({
+class soal6 extends StatelessWidget {
+  const soal6({
     super.key,
   });
 
@@ -23,7 +23,10 @@ class soal5 extends StatelessWidget {
         child: Container(
           width: 250,
           height: 250,
-          color: Colors.blue,
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(250/2)
+          ),
           child: Center(
             child: Text(
               'Hello',

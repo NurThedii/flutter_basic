@@ -1,353 +1,43 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled1/ep_1_hallo_dunia.dart';
+import './widget/soal_1.dart';
+import './widget/soal_2.dart';
+import './widget/soal_3.dart';
+import './widget/soal_4.dart';
+import './widget/soal_5.dart';
+import './widget/soal_6.dart';
+import './widget/soal_7.dart';
+import './widget/soal_8.dart';
+import './widget/soal_9.dart';
+import './widget/soal_10.dart';
+import './widget/soal_11.dart';
+import './widget/soal_12.dart';
+import './widget/soal_13.dart';
+import './widget/soal_14.dart';
+import './widget/soal_15.dart';
+import './widget/soal_16.dart';
+import './widget/soal_17.dart';
+import './widget/soal_18.dart';
+import './widget/soal_19.dart';
+import './widget/soal_20.dart';
+import './widget/soal_21.dart';
+import './widget/soal_22.dart';
+import './widget/soal_23.dart';
+import './widget/soal_24.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(myApp());
 }
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class myApp extends StatelessWidget {
+  const myApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Judul'),
-        ),
-        // body:Column(
-        //   children: [
-        //     Container(
-        //       width: 100,
-        //       height: 100,
-        //       color: Colors.amber,
-        //       child: Text('data'),
-        //     ),  Container(
-        //       width: 100,
-        //       height: 100,
-        //       color: Colors.blue,
-        //       child: Text('data'),
-        //     ),  Container(
-        //       width: 100,
-        //       height: 100,
-        //       color: Colors.red,
-        //       child: Text('data'),
-        //     ),
-        //   ],
-        // ),
-      //   body:Stack(
-      //     children: [
-      //       Container(
-      //         width: 200,
-      //         height: 200,
-      //         color: Colors.amber,
-      //         child: Text('data'),
-      //       ),  Container(
-      //         width: 150,
-      //         height: 150,
-      //         color: Colors.blue,
-      //         child: Text('data'),
-      //       ),  Container(
-      //         width: 100,
-      //         height: 100,
-      //         color: Colors.red,
-      //         child: Text('data'),
-      //       ),
-      //     ],
-      //   ),
-      // ),
-      // body:SingleChildScrollView(
-      //  scrollDirection: Axis.horizontal,
-      //   child: Row(
-      //    children:[
-      //      Row(
-      //        children: [
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.amber,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.blue,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.red,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.blue,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.red,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.blue,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.red,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.blue,
-      //            child: Text('data'),
-      //          ),
-      //          Container(
-      //            width: 100,
-      //            height: 100,
-      //            color: Colors.red,
-      //            child: Text('data'),
-      //          ),
-      //        ],
-      //      ),
-      //    ],
-      //  ),
-      // )
-      //   body: ListView(
-      //     children: [
-      //       Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.blue,
-      //        child: Text('data'),
-      //      ),
-      //      Container(
-      //        width: 100,
-      //        height: 100,
-      //        color: Colors.red,
-      //        child: Text('data'),
-      //      ),
-      //     ],
-      //   ),
-      //   body: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     crossAxisAlignment: CrossAxisAlignment.end,
-      //     children: [
-      //       Container(
-      //         width: 100,
-      //         height: 100,
-      //         color: Colors.red,
-      //       ),
-      //       Container(
-      //         width: 150,
-      //         height: 150,
-      //         color: Colors.green,
-      //       ),
-      //       Container(
-      //         width: 200,
-      //         height: 200,
-      //         color: Colors.blue,
-      //       ),
-      //     ],
-      //   ),
-      //   body: Stack(
-      //     alignment: AlignmentDirectional.center,
-      //       children: [
-      //         Container(
-      //           width: 200,
-      //           height: 200,
-      //           color: Colors.red,
-      //         ),
-      //         Container(
-      //           width: 150,
-      //           height: 150,
-      //           color: Colors.green,
-      //         ),
-      //         Container(
-      //           width: 100,
-      //           height: 100,
-      //           color: Colors.blue,
-      //         ),
-      //       ],
-      //   ),
-      body: GridView(
-        padding:
-        EdgeInsets.only(
-          top: 10,
-          right: 10
-        ),
-          gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-              childAspectRatio:1/2
-          ), // ini artinya maksimal object dalam 1 layar itu 2
-        // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200), // kalo ini maksimal 200 px
-        children: [
-          Container(
-            color: Colors.blue,
-          ),
-          Container(
-            color: Colors.amber,
-          ),
-          Container(
-            color: Colors.pink,
-          ),
-          Container(
-            color: Colors.green,
-          ),  Container(
-            color: Colors.blue,
-          ),
-          Container(
-            color: Colors.amber,
-          ),
-          Container(
-            color: Colors.pink,
-          ),
-          Container(
-            color: Colors.green,
-          ),  Container(
-            color: Colors.blue,
-          ),
-          Container(
-            color: Colors.amber,
-          ),
-          Container(
-            color: Colors.pink,
-          ),
-          Container(
-            color: Colors.green,
-          ),  Container(
-            color: Colors.blue,
-          ),
-          Container(
-            color: Colors.amber,
-          ),
-          Container(
-            color: Colors.pink,
-          ),
-          Container(
-            color: Colors.green,
-          ),
-        ],
-      ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: soal24(),
     );
   }
 }
+
+

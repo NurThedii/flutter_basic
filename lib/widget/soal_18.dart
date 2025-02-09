@@ -1,8 +1,8 @@
-   import 'dart:math';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal17 extends StatelessWidget {
-  const soal17({
+class soal18 extends StatelessWidget {
+  const soal18({
     super.key,
   });
 
@@ -19,42 +19,45 @@ class soal17 extends StatelessWidget {
           }, icon: Icon(Icons.more_vert))
         ],
       ),
-      body:GridView.builder(
+      body:ListView.builder(
+          padding: EdgeInsets.all(20),
           itemCount: 50,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              mainAxisSpacing:20,
-              crossAxisSpacing: 20,
-          ),
-        itemBuilder: (context,index){
+          itemBuilder: (context,index){
             if(index %2 ==0){
-              return Container(
-                width: 150,
-                height: 150,
-                color: Colors.blue,
-                child: Center(
-                  child: Text(
-                    "Hello",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 150,
+                      color: Colors.blue,
                     ),
-                  ),
+                    SizedBox(height: 10),
+
+                    Text('Hello ${index +1}',
+                        style: TextStyle(fontSize: 25,
+                    )
+                    )
+                  ],
                 ),
               );
             }else{
-              return Container(
-                width: 150,
-                height: 150,
-                color: Colors.amber,
-                child: Center(
-                  child: Text(
-                    "Hello",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 150,
+                      color: Colors.amber,
                     ),
-                  ),
+                    SizedBox(height: 10),
+                Text('Hello ${index +1}',
+                  style: TextStyle(fontSize: 25,
+                  )
+                )
+                  ],
                 ),
               );
             }

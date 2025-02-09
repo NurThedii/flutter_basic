@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal4 extends StatelessWidget {
-  const soal4({
+class soal5 extends StatelessWidget {
+  const soal5({
     super.key,
   });
 
@@ -20,13 +20,20 @@ class soal4 extends StatelessWidget {
         ],
       ),
       body: Center(
-        child:Transform.rotate(
-          angle: pi /2,
-          child: FlutterLogo(
-            size: 200,
+        child: Container(
+          width: 250,
+          height: 250,
+          color: Colors.blue,
+          child: Center(
+            child: Text(
+              'Hello',
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.white
+              ),
+            ),
           ),
         ),
-
       ),
     );
   }

@@ -1,8 +1,8 @@
-import 'dart:math';
+   import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal11 extends StatelessWidget {
-  const soal11({
+class soal12 extends StatelessWidget {
+  const soal12({
     super.key,
   });
 
@@ -19,37 +19,76 @@ class soal11 extends StatelessWidget {
           }, icon: Icon(Icons.more_vert))
         ],
       ),
-      body:Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body:Row(
         children: [
-          Container(
-            width: 150,
-            height: 150,
-            color: Colors.blue,
-            child: Center(
-              child: Text(
-                "Hello",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                width: 150,
+                height: 150,
+                color: Colors.blue,
+                child: Center(
+                  child: Text(
+                    "Hello",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                    ),
+                  ),
                 ),
               ),
-            ),
+              SizedBox(height: 20,),
+              Container(
+                width: 150,
+                height: 150,
+                color: Colors.amber,
+                child: Center(
+                  child: Text(
+                    "Kuning",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                    ),
+                  ),
+                ),
+              )
+            ],
           ),
-          SizedBox(height: 20,),
-          Container(
-            width: 150,
-            height: 150,
-            color: Colors.amber,
-            child: Center(
-              child: Text(
-                "Kuning",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white
+          SizedBox(width: 20,),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                width: 150,
+                height: 150,
+                color: Colors.amber,
+                child: Center(
+                  child: Text(
+                    "Kuning",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                    ),
+                  ),
                 ),
               ),
-            ),
+              SizedBox(height: 20,),
+              Container(
+                width: 150,
+                height: 150,
+                color: Colors.blue,
+                child: Center(
+                  child: Text(
+                    "Hello",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                    ),
+                  ),
+                ),
+              ),
+            ],
           )
         ],
       ),

@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-class soal20 extends StatelessWidget {
-  const soal20({
+class soal21 extends StatelessWidget {
+  const soal21({
     super.key,
   });
 
@@ -19,34 +19,37 @@ class soal20 extends StatelessWidget {
           }, icon: Icon(Icons.more_vert))
         ],
       ),
-      body: Stack(
-        children: [
-          Container(
-            width: 250,
-            height: 250,
-            color: Colors.green,
-          ),
-          Container(
-            width: 225,
-            height: 225,
-            color: Colors.red,
-          ),
-          Container(
-            width: 200,
-            height: 200,
-            color: Colors.blue,
-          ),
-          Container(
-            width: 175,
-            height: 175,
-            color: Colors.purple,
-          ),
-          Container(
-            width: 150,
-            height: 150,
-            color: Colors.amber,
-          ),
-        ],
+      body: Center(
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              width: 250,
+              height: 250,
+              color: Colors.green,
+            ),
+            Container(
+              width: 225,
+              height: 225,
+              color: Colors.red,
+            ),
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.blue,
+            ),
+            Container(
+              width: 175,
+              height: 175,
+              color: Colors.purple,
+            ),
+            Container(
+              width: 150,
+              height: 150,
+              color: Colors.amber,
+            ),
+          ],
+        ),
       ),
     );
   }
